@@ -9,7 +9,8 @@
 
 # gwt caches and compiled units #
 war/gwt_bree/
-gwt-unitCache/
+src/main/gwt-unitCache/
+
 
 # boilerplate generated classes #
 .apt_generated/
