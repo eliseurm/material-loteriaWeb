@@ -16,7 +16,6 @@
         <gin.version>2.1.2</gin.version>
         <gwt-material.version>2.0-rc3</gwt-material.version>
         <gwt-material-table.version>1.0-rc3</gwt-material-table.version>
-        <gwt.style>OBF</gwt.style>
 
         <!-- maven -->
         <maven-war-plugin.version>2.6</maven-war-plugin.version>

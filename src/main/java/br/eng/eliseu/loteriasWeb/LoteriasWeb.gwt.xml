@@ -6,11 +6,14 @@
     <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint"/>
 
     <!--GWT Material-->
+    <inherits name="gwt.material.design.addins.GwtMaterialAddins"/>
+    <inherits name="gwt.material.design.GwtMaterialTableDebug"/>
     <inherits name="gwt.material.design.GwtMaterialWithJQueryDebug"/>
     <inherits name="gwt.material.design.themes.ThemeBlue"/>
     <inherits name="gwt.material.design.addins.GwtMaterialAddinsDebug"/>
-    <inherits name="gwt.material.design.GwtMaterialTableDebug"/>
     <inherits name="gwt.material.design.jquery.JQuery" />
+
+
 
     <extend-configuration-property name="gin.ginjector.modules" value="br.eng.eliseu.loteriasWeb.client.gin.ClientModule"/>
 
