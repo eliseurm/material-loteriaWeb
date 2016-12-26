@@ -17,6 +17,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     interface MyProxy extends Proxy<ApplicationPresenter> {
     }
 
+    // --- Define que este presenter vai suportar slots, e que no caso é o SLOT_MAIN 
     public static final NestedSlot SLOT_MAIN = new NestedSlot();
 
     @Inject

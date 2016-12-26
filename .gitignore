@@ -3,8 +3,6 @@
 # Package Files #
 *.jar
 *.war
-<<<<<<< HEAD
-=======
 *.project
 *.classpath
 
@@ -19,27 +17,18 @@ src/main/gwt-unitCache/
 .apt_generated/
 
 # more caches and things from deploy #
-<<<<<<< HEAD
 war/WEB-INF/deploy/
 war/WEB-INF/classes/
-=======
 target/
 .settings/
 
 src/main/webapp/WEB-INF/deploy/
 src/main/webapp/WEB-INF/classes/
-src/main/webapp/GwtdTutorial/
-src/main/webapp/GwtMaterialBasic/
-
->>>>>>> master
+src/main/webapp/LoteriasWeb/
 
 #compilation logs
 .gwt/
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 #caching for already compiled files
 gwt-unitCache/
 

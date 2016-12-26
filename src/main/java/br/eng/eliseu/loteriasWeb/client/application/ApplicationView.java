@@ -29,6 +29,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     	
         initWidget(uiBinder.createAndBindUi(this));
         
+        // --- Define o container do SLOT_MAIN
         bindSlot(ApplicationPresenter.SLOT_MAIN, container);
         
         txtSearch.addCloseHandler(event -> {
@@ -45,15 +46,4 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         navBarSearch.setVisible(true);
     }
 
-//    @Override
-//    public void onGenerateListSeach() {
-//        List<SearchObject> searches = new ArrayList<>();
-//        searches.add(new SearchObject(IconType.INFO, "Apple"));
-//        searches.add(new SearchObject(IconType.INFO, "Orange"));
-//        searches.add(new SearchObject(IconType.INFO, "Banana"));
-//        searches.add(new SearchObject(IconType.INFO, "Billiard"));
-//        searches.add(new SearchObject(IconType.INFO, "Ball"));
-//        searches.add(new SearchObject(IconType.INFO, "Cat"));
-//        txtSearch.setListSearches(searches);
-//    }
 }
