@@ -4,11 +4,15 @@
   xmlns:m="urn:import:gwt.material.design.client.ui"
   xmlns:ma="urn:import:gwt.material.design.addins.client">
 
+	<ui:import field="br.eng.eliseu.loteriasWeb.client.place.NameTokens.HOME"/>
+	<ui:import field="br.eng.eliseu.loteriasWeb.client.place.NameTokens.LOTOFACIL_CONCURSOS"/>
+	<ui:import field="br.eng.eliseu.loteriasWeb.client.place.NameTokens.LOTOFACIL_ESTATISTICAS"/>
+
     <ui:with field="res" type="br.eng.eliseu.loteriasWeb.client.resources.AppResources"/>
     
     <ui:style>
     
-        header, main, footer{
+<!--         header, main, footer{
             padding-left: 280px;
         }
         .label{
@@ -20,7 +24,7 @@
             bottom: 0px;
             padding-top: 0px !important;
         }
-        
+ -->        
     </ui:style>
     
     <g:HTMLPanel>
@@ -56,11 +60,33 @@
                     <m:MaterialLabel text="GWT Material" textColor="WHITE"/>
                     <m:MaterialLink text="gwt-material@gmail.com" activates="dropProfile" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT" textColor="WHITE"/>
                 </ma:sideprofile.MaterialSideProfile>
-                <m:MaterialLink text="Starter" textColor="BLUE" iconType="WHATSHOT"/>
-                <m:MaterialLink text="Apps" textColor="BLUE" iconType="VIEW_MODULE"/>
-                <m:MaterialLink text="Notifications" textColor="BLUE" iconType="NOTIFICATIONS" separator="true"/>
-                <m:MaterialLink text="Navigation" textColor="BLUE" iconType="NAVIGATION"/>
-                <m:MaterialLink text="Favorite" textColor="BLUE" iconType="FAVORITE"/>
+                
+                
+                <m:MaterialLink targetHistoryToken="{HOME}" text="Home" textColor="BLUE" iconType="WHATSHOT"/>
+                <m:MaterialRow></m:MaterialRow>
+				<m:MaterialCollapsible grid="s12 m6 l8">
+					<m:MaterialCollapsibleItem>
+						<m:MaterialCollapsibleHeader>
+							<m:MaterialLink text="LotoFacil" iconType="POLYMER" iconPosition="LEFT" textColor="BLUE" />
+						</m:MaterialCollapsibleHeader>
+						<m:MaterialCollapsibleBody>
+				                <m:MaterialLink targetHistoryToken="{LOTOFACIL_ESTATISTICAS}" text="Estatisticas" textColor="BLUE" iconType="NOTIFICATIONS" separator="true"/>
+				                <m:MaterialLink targetHistoryToken="{LOTOFACIL_CONCURSOS}" text="Concursos" textColor="BLUE" iconType="VIEW_MODULE"/>
+						</m:MaterialCollapsibleBody>
+					</m:MaterialCollapsibleItem>
+
+					<m:MaterialCollapsibleItem>
+						<m:MaterialCollapsibleHeader>
+							<m:MaterialLink text="MegaSena" iconType="POLYMER" iconPosition="LEFT" textColor="BLUE" />
+						</m:MaterialCollapsibleHeader>
+						<m:MaterialCollapsibleBody>
+			                <m:MaterialLink text="Concursos" textColor="BLUE" iconType="VIEW_MODULE"/>
+			                <m:MaterialLink text="Estatisticas" textColor="BLUE" iconType="NOTIFICATIONS" separator="true"/>
+						</m:MaterialCollapsibleBody>
+					</m:MaterialCollapsibleItem>
+
+				</m:MaterialCollapsible>
+                
             </m:MaterialSideNav>
             
             <!--Drop down -->
@@ -71,65 +97,13 @@
             </m:MaterialDropDown>
         </header>
 
+
+
         <m:MaterialContainer fontSize="0.8em" ui:field="container">
-            <m:MaterialLabel text="Today" textColor="GREY" addStyleNames="{style.label}"/>
-            
-            <!-- Collapsible -->
-            <m:MaterialCollapsible type="POPOUT" grid="s12 m6 l8">
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Travel" iconType="AIRPLANEMODE_ACTIVE" iconPosition="LEFT" textColor="PURPLE"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
+        <!-- addStyleNames="{style.label}" -->
 
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Social" iconType="GROUP" iconPosition="LEFT" textColor="RED"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
 
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Updates" iconType="FLAG" iconPosition="LEFT" textColor="AMBER"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
 
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Purchases" iconType="ADD_SHOPPING_CART" iconPosition="LEFT" textColor="BROWN"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
-
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Promos" iconType="LOYALTY" iconPosition="LEFT" textColor="BLUE"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
-
-                <m:MaterialCollapsibleItem>
-                    <m:MaterialCollapsibleHeader>
-                        <m:MaterialLink text="Finance" iconType="INSERT_CHART" iconPosition="LEFT" textColor="GREEN"/>
-                    </m:MaterialCollapsibleHeader>
-                    <m:MaterialCollapsibleBody>
-                        <m:MaterialLabel text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."/>
-                    </m:MaterialCollapsibleBody>
-                </m:MaterialCollapsibleItem>
-            </m:MaterialCollapsible>
         </m:MaterialContainer>
 
         <!-- FAB -->

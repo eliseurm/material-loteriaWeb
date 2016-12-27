@@ -29,7 +29,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     	
         initWidget(uiBinder.createAndBindUi(this));
         
-        // --- Define o container do SLOT_MAIN
+        // --- Define o container como sendo o pai do SLOT_MAIN
         bindSlot(ApplicationPresenter.SLOT_MAIN, container);
         
         txtSearch.addCloseHandler(event -> {
