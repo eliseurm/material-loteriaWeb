@@ -12,8 +12,7 @@ class EstatisticaView extends ViewImpl implements EstatisticaPresenter.MyView {
     interface Binder extends UiBinder<Widget, EstatisticaView> {
     }
 
-    @UiField
-    SimplePanel main;
+    @UiField SimplePanel estatistica;
 
     @Inject
     EstatisticaView(Binder uiBinder) {

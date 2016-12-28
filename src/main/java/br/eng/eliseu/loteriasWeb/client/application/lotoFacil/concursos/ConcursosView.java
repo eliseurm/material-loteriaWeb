@@ -12,8 +12,7 @@ class ConcursosView extends ViewImpl implements ConcursosPresenter.MyView {
     interface Binder extends UiBinder<Widget, ConcursosView> {
     }
 
-    @UiField
-    SimplePanel main;
+    @UiField SimplePanel concurso;
 
     @Inject
     ConcursosView(Binder uiBinder) {

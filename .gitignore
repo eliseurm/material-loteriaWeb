@@ -1,30 +1,28 @@
-*.class
 
 # Package Files #
 *.jar
 *.war
 *.project
 *.classpath
-
->>>>>>> master
+*.class
 
 # gwt caches and compiled units #
-war/gwt_bree/
 src/main/gwt-unitCache/
-
-
-# boilerplate generated classes #
-.apt_generated/
-
-# more caches and things from deploy #
-war/WEB-INF/deploy/
-war/WEB-INF/classes/
-target/
-.settings/
-
 src/main/webapp/WEB-INF/deploy/
 src/main/webapp/WEB-INF/classes/
 src/main/webapp/LoteriasWeb/
+
+
+# boilerplate generated classes #
+target/
+.settings/
+.apt_generated/
+
+# more caches and things from deploy #
+war/gwt_bree/
+war/WEB-INF/deploy/
+war/WEB-INF/classes/
+
 
 #compilation logs
 .gwt/

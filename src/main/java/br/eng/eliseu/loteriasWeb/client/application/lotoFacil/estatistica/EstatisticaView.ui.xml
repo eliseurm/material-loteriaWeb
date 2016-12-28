@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-    <g:SimplePanel ui:field="main">
+    <g:SimplePanel ui:field="estatistica">
         <g:Label>Estatisticas Loto Facil</g:Label>
     </g:SimplePanel>
 

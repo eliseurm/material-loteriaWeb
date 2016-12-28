@@ -2,7 +2,8 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
              
-    <g:SimplePanel ui:field="main">
+    <g:SimplePanel ui:field="concurso">
         <g:Label>Concursos LotoFacil</g:Label>
     </g:SimplePanel>
+    
 </ui:UiBinder>

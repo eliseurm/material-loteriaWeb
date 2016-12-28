@@ -6,17 +6,18 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
-import com.gwtplatform.mvp.client.proxy.Proxy;
+import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
 import br.eng.eliseu.loteriasWeb.client.application.ApplicationPresenter;
 import br.eng.eliseu.loteriasWeb.client.place.NameTokens;
+
 public class ConcursosPresenter extends Presenter<ConcursosPresenter.MyView, ConcursosPresenter.MyProxy>  {
     interface MyView extends View  {
     }
     
     @ProxyStandard
-    @NameToken(NameTokens.LOTOFACIL_CONCURSOS)
-    interface MyProxy extends Proxy<ConcursosPresenter> {
+    @NameToken(NameTokens.LOTOFACILCONCURSOS)
+    interface MyProxy extends ProxyPlace<ConcursosPresenter> {
     }
 
     @Inject

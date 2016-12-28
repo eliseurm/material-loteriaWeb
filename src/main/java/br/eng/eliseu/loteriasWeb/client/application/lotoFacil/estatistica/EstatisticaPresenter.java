@@ -10,12 +10,13 @@ import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
 import br.eng.eliseu.loteriasWeb.client.application.ApplicationPresenter;
 import br.eng.eliseu.loteriasWeb.client.place.NameTokens;
+
 public class EstatisticaPresenter extends Presenter<EstatisticaPresenter.MyView, EstatisticaPresenter.MyProxy>  {
     interface MyView extends View  {
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.LOTOFACIL_ESTATISTICAS)
+    @NameToken(NameTokens.LOTOFACILESTATISTICAS)
     interface MyProxy extends ProxyPlace<EstatisticaPresenter> {
     }
 
