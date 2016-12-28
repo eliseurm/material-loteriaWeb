@@ -5,8 +5,8 @@
   xmlns:ma="urn:import:gwt.material.design.addins.client">
 
 	<ui:import field="br.eng.eliseu.loteriasWeb.client.place.NameTokens.HOME"/>
-	<ui:import field="br.eng.eliseu.loteriasWeb.client.place.NameTokens.LOTOFACILCONCURSOS"/>
-	<ui:import field="br.eng.eliseu.loteriasWeb.client.place.NameTokens.LOTOFACILESTATISTICAS"/>
+	<ui:import field="br.eng.eliseu.loteriasWeb.client.place.NameTokens.LOTOFACIL_CONCURSOS"/>
+	<ui:import field="br.eng.eliseu.loteriasWeb.client.place.NameTokens.LOTOFACIL_ESTATISTICAS"/>
 
     <ui:with field="res" type="br.eng.eliseu.loteriasWeb.client.resources.AppResources"/>
     
@@ -62,8 +62,6 @@
                 </ma:sideprofile.MaterialSideProfile>
                 
                 <m:MaterialLink targetHistoryToken="{HOME}" text="Home" textColor="BLUE" iconType="WHATSHOT"/>
-                <m:MaterialLink targetHistoryToken="{LOTOFACILCONCURSOS}" text="Concursos" textColor="BLUE" iconType="VIEW_MODULE"/>
-                <m:MaterialLink targetHistoryToken="{LOTOFACILESTATISTICAS}" text="Estatisticas" textColor="BLUE" iconType="NOTIFICATIONS"/>
 
 				<m:MaterialCollapsible grid="s12 m6 l8">
 					<m:MaterialCollapsibleItem>
@@ -71,6 +69,8 @@
 							<m:MaterialLink text="LotoFacil" iconType="POLYMER" iconPosition="LEFT" textColor="BLUE" />
 						</m:MaterialCollapsibleHeader>
 						<m:MaterialCollapsibleBody>
+			                <m:MaterialLink targetHistoryToken="{LOTOFACIL_CONCURSOS}" text="Concursos" textColor="BLUE" iconType="VIEW_MODULE"/>
+			                <m:MaterialLink targetHistoryToken="{LOTOFACIL_ESTATISTICAS}" text="Estatisticas" textColor="BLUE" iconType="NOTIFICATIONS"/>
 						</m:MaterialCollapsibleBody>
 					</m:MaterialCollapsibleItem>
 

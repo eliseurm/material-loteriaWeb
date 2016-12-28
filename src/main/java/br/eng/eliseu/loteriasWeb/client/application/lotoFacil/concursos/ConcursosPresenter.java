@@ -16,7 +16,7 @@ public class ConcursosPresenter extends Presenter<ConcursosPresenter.MyView, Con
     }
     
     @ProxyStandard
-    @NameToken(NameTokens.LOTOFACILCONCURSOS)
+    @NameToken(NameTokens.LOTOFACIL_CONCURSOS)
     interface MyProxy extends ProxyPlace<ConcursosPresenter> {
     }
 

@@ -16,7 +16,7 @@ public class EstatisticaPresenter extends Presenter<EstatisticaPresenter.MyView,
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.LOTOFACILESTATISTICAS)
+    @NameToken(NameTokens.LOTOFACIL_ESTATISTICAS)
     interface MyProxy extends ProxyPlace<EstatisticaPresenter> {
     }
 

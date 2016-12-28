@@ -17,7 +17,6 @@ public class ClientModule extends AbstractPresenterModule {
     	
         install(new DefaultModule.Builder()
             	.tokenFormatter(RouteTokenFormatter.class)
-//            	.tokenFormatter(ParameterTokenFormatter.class)
             	.build());
 
         install(new ApplicationModule());

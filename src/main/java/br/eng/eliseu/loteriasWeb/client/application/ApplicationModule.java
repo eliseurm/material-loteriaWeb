@@ -12,8 +12,8 @@ public class ApplicationModule extends AbstractPresenterModule {
     protected void configure() {
     	
 		install(new HomeModule());
+		install(new ConcursosModule());
 		install(new EstatisticaModule());
-        install(new ConcursosModule());
 		
 
 		bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class, ApplicationPresenter.MyProxy.class);
