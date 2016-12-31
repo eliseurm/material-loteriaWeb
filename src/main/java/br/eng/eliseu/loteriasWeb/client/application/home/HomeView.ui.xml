@@ -5,7 +5,7 @@
     xmlns:ma="urn:import:gwt.material.design.addins.client"
     >
 
-    <g:HTMLPanel>
+    <g:HTMLPanel> 
         
             <m:MaterialLabel text="Today" textColor="GREY" />
             <m:MaterialImage url="imagens/menina.jpg" />
