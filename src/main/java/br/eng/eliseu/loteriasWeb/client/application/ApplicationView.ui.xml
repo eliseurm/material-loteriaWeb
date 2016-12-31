@@ -69,8 +69,8 @@
 							<m:MaterialLink text="LotoFacil" iconType="POLYMER" iconPosition="LEFT" textColor="BLUE" />
 						</m:MaterialCollapsibleHeader>
 						<m:MaterialCollapsibleBody>
-			                <m:MaterialLink targetHistoryToken="{LOTOFACIL_CONCURSOS}" text="Concursos" textColor="BLUE" iconType="VIEW_MODULE" waves="DEFAULT"/>
-			                <m:MaterialLink targetHistoryToken="{LOTOFACIL_ESTATISTICAS}" text="Estatisticas" textColor="BLUE" iconType="NOTIFICATIONS" waves="DEFAULT"/>
+			                <m:MaterialLink targetHistoryToken="{LOTOFACIL_CONCURSOS}" text="Concursos" textColor="BLUE" iconType="VIEW_MODULE" />
+			                <m:MaterialLink targetHistoryToken="{LOTOFACIL_ESTATISTICAS}" text="Estatisticas" textColor="BLUE" iconType="NOTIFICATIONS" />
 						</m:MaterialCollapsibleBody>
 					</m:MaterialCollapsibleItem>
 
