@@ -1,9 +1,12 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
-<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+<ui:UiBinder 
+  xmlns:ui="urn:ui:com.google.gwt.uibinder"
+  xmlns:m="urn:import:gwt.material.design.client.ui"
+  xmlns:g="urn:import:com.google.gwt.user.client.ui">
              
-    <g:SimplePanel ui:field="concurso">
+    <g:HTMLPanel ui:field="concurso">
         <g:Label>Concursos LotoFacil</g:Label>
-    </g:SimplePanel>
+        <m:MaterialButton text="Button" waves="DEFAULT" backgroundColor="WHITE" textColor="BLACK"/>
+    </g:HTMLPanel>
     
 </ui:UiBinder>

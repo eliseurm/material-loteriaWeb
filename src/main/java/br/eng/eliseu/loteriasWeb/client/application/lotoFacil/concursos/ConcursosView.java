@@ -4,7 +4,7 @@ import javax.inject.Inject;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 
@@ -12,7 +12,7 @@ class ConcursosView extends ViewImpl implements ConcursosPresenter.MyView {
     interface Binder extends UiBinder<Widget, ConcursosView> {
     }
 
-    @UiField SimplePanel concurso;
+    @UiField HTMLPanel concurso;
 
     @Inject
     ConcursosView(Binder uiBinder) {
